@@ -1,0 +1,122 @@
+#1
+# sp=["1", 'a', '3', '4', 'b', '6']
+# a=[]
+# b=[]
+# for i in sp:
+#     if i.isalpha():
+#         a.append(i)
+#     if i.isdigit():
+#         b.append(i)
+# print(a)
+# print(b)
+
+#2
+# import random
+# def gen_bil():
+#     n=random.sample(range(1,50), 6)
+#     return sorted(n)
+# bil=gen_bil()
+# print(bil)
+
+#3
+# def asis():
+#     a=input()
+#     b=list(map(int, a.split()))
+#     return b
+# def chbp(n):
+#     it=[]
+#     for i in range(1, len(n)):
+#         if n[i] > n[i-1]:
+#             it.append(n[i])
+#     return it
+# n=asis()
+# s=chbp(n)
+# print(s)
+
+#4
+# numb=[]
+# while True:
+#     us=input()
+#     if us == "":
+#         break
+#     try:
+#         n=float(us)
+#         numb.append(n)
+#     except ValueError:
+#         print("error")
+# a=sum(numb)/len(numb)
+# print(a)
+# niz=[i for i in numb if i < a]
+# rav=[i for i in numb if i == a]
+# vish=[i for i in numb if i > a]
+# print(niz)
+# print(rav)
+# print(vish)
+
+#5
+# r_a = int(input("Введите рост Андрея:"))
+# rpeople = input("Введите рост people:")
+# r1 = list(map(int, rpeople.split()))
+# mesto = 1
+# for i in r1:
+#     if i > r_a:
+#         mesto += 1
+#     if i == r_a:
+#         mesto += 1
+# print(mesto)
+
+#6
+# import random
+# count = 0
+# c=0
+# p=None
+# while c <3:
+#     if random.randint(0, 1) == 0:
+#         a = 'O'
+#     else:
+#         a = 'P'
+#     print(a)
+#     count +=1
+#     if a==p:
+#         c+=1
+#     else:
+#         c=1
+#     p=a
+# print(count)
+
+#7
+# number = input()
+# sum = 0
+# b = len(number)
+# for i in range(b):
+#     a = int(number[i])
+#     if (b - i) % 2 == 0:
+#         sum += a
+#     else:
+#         c = a * 2
+#         if c > 9:
+#             c -= 9
+#         sum += c
+# if sum % 10 == 0:
+#     print("Корректный номер")
+# else:
+#     print("Некорректный номер")
+
+#8
+# c = int(input())
+# for i in range(c):
+#     sl = input().strip()
+#     if len(sl) > 10:
+#         a = sl[0] + str(len(sl) - 2) + sl[-1]
+#         print(a)
+#     else:
+#         print(sl)
+
+#9
+# a = int(input())
+# count = 0
+# for i in range(a):
+#     b, c = map(int, input().split())
+#     if c - b >= 2:
+#         count += 1
+# print(count)
